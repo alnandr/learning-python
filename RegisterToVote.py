@@ -52,14 +52,12 @@ def registered():
             time.sleep(3)
             webbrowser.open(website, 1)
         else:
-            print(
-                "Sorry, I didn't understand that. Please answer with Y for Yes or N for No.")
+            print("Sorry, I didn't understand that. Please answer with Y for Yes or N for No.")
             return registered()
     except BaseException as error:
         print("Invalid input.")
         print(error)
         return registered()
-
 
 # Create a loop that asks the user to enter in their age, and configure two outputs based on whether the person is old enough to vote in the U.S. (>18 years)
 while True:
@@ -82,16 +80,6 @@ if age >= 18:
 else:
     print()
     print("You are not old enough to vote in the United States.")
-
-#    if registered.lower() == "yes":
-#        print()
-#        print("That's great! Don't forget to vote on Election Day, which is on Tuesday, November 5, 2019. You can also early vote!")
-#    else:
-#        print()
-#        print("Let's get you registered to vote!")
-#        time.sleep(3)
-#        webbrowser.open(website, 1)
-
 
 # Add a 1.5 second delay and thank the user for using your program.
 time.sleep(4)
